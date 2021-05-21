@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: 
   become: yes
   tasks:
   - name: install websever on debian nodes only
@@ -7,7 +7,7 @@
      name: apache2
      state: present
     when: ansible_os_family =="Debian"
-    
+
   - name: install webserver on RedHat nodes only
     yum:
      name: httpd

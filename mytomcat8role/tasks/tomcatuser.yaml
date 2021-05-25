@@ -6,10 +6,10 @@
 
 - name: configure tomcat context file
   template:
-    src: template/tomcontext.j2
+    src: templates/tomcontext.j2
     dest: /opt/tomcat/webapps/manager/META-INF/context.xml
 
 - name: configure tomcat host manager context file
   template:
-    src: template/tomhostcontext.j2
+    src: templates/tomhostcontext.j2
     dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml

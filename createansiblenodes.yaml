@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: create ansible ubuntu nodes
+    ec2:
+    key_name: MYNVIRGINIAKEY
+    instance_type: t2.micro
+    image: ami-083be282b6cd7f37b
+    wait: yes
+    group: launch-wizard-8
+    region: us-east-1
+    count: 2
+    vpc_subnet_id: subnet-fca39ab1
+    assign_public_ip: yes
+    instance_tags:
+        Name: Ansible_Ubuntu_Node

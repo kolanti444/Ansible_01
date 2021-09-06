@@ -1,23 +1,9 @@
 
-[mywebservers]
-172.31.20.82
-172.31.28.206
-
-[applicationservers]
-172.31.74.25
-
-[Dbservers]
-172.31.20.70
-172.31.28.220
-
-[ubuntuservers]
-172.31.20.82
 
 [ubuntuserver]
-172.31.90.110
+172.31.22.1
 
-[RedHatservers]
-172.31.28.206
+
 
 
 

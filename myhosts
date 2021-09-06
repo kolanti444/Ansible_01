@@ -13,6 +13,9 @@
 [ubuntuservers]
 172.31.20.82
 
+[ubuntuserver]
+172.31.90.110
+
 [RedHatservers]
 172.31.28.206
 

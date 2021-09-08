@@ -1,5 +1,5 @@
 ---
-- hosts: webserver
+- hosts: 172.31.81.173
   become: yes
   roles:
     - {role: mytomcat8role, when: ansible_os_family=="Debian"}
